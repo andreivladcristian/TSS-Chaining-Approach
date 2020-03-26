@@ -1,0 +1,92 @@
+package test;
+
+import example.SearchDigit;
+import org.junit.Test;
+
+public class SearchDigitTest {
+
+    SearchDigit tester = new SearchDigit();
+
+    @Test
+    public void testMain() {
+
+        tester.main(new String[]{
+                                3,
+                                1, 3, 1, 1, 1, 1, 1, 1, 1, 1,
+                                3, 3, 3, 3, 3, 3, 3, 3, 3, 3,
+                                Output graf Gasit,
+                                PROGRAM
+                                });
+    }
+
+    @Test
+    public void equivalencePartitioning() {
+
+        tester.main(new String[]{
+                1,
+                1, 3, 4, 5, 6, 7, 8, 9, 10, 11,
+                12, 13, 14, 15, 16, 17, 18, 19, 20, 21,
+                Output graf Negasit,
+                MUCHIE 6-7
+        });
+
+        tester.main(new String[]{
+                1,
+                2, 3, 4, 5, 6, 7, 8, 9, 10, 11,
+                12, 13, 14, 15, 16, 17, 18, 19, 20, 21,
+                Output graf Negasit,
+                MUCHIE 6-8
+        });
+
+        tester.main(new String[]{
+                1,
+                1, 3, 4, 5, 6, 7, 8, 9, 10, 11,
+                12, 13, 14, 15, 16, 17, 18, 19, 20, 21,
+                Output graf Negasit,
+                MUCHIE 9-10
+        });
+
+        tester.main(new String[]{
+                1,
+                2, 3, 4, 5, 6, 7, 8, 9, 10, 11,
+                12, 13, 14, 15, 16, 17, 18, 19, 20, 21,
+                Output graf Negasit,
+                MUCHIE 9-16
+        });
+
+        tester.main(new String[]{
+                1,
+                1, 3, 4, 5, 6, 7, 8, 9, 10, 11,
+                12, 13, 14, 15, 16, 17, 18, 19, 20, 21,
+                Output graf Negasit,
+                MUCHIE 13-14
+        });
+
+        tester.main(new String[]{
+                1,
+                1, 3, 4, 5, 6, 7, 8, 9, 10, 11,
+                1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+                Output graf Gasit,
+                MUCHIE 13-15
+        });
+
+        tester.main(new String[]{
+                1,
+                1, 3, 4, 5, 6, 7, 8, 9, 10, 11,
+                1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+                Output graf Gasit,
+                MUCHIE 16-17
+        });
+
+        tester.main(new String[]{
+                1,
+                1, 3, 4, 5, 6, 7, 8, 9, 10, 11,
+                1, 2, 1, 1, 1, 1, 1, 1, 1, 1,
+                Output graf Negasit,
+                MUCHIE 16-18
+        });
+
+
+    }
+
+}
